@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Formulario simple que enviará una petición POST -->
+    <h2>Mascotas</h2>
+    <form action="/api/mascotas" method="post">
+      <label for="POST-name">Nombre:</label>
+      <input id="POST-name" type="text" name="nombre" />
+      <label for="POST-name">Raza:</label>
+      <input id="POST-name" type="text" name="raza" />
+      <label for="POST-name">Edad:</label>
+      <input id="POST-name" type="text" name="edad" />
+      <input type="submit" value="Save" />
+    </form>
+    <h2>Personas</h2>
+    <form action="/api/personas" method="post">
+      <label for="POST-name">Nombre:</label>
+      <input id="POST-name" type="text" name="nombre" />
+      <label for="POST-name">Apellido:</label>
+      <input id="POST-name" type="text" name="apellido" />
+      <label for="POST-name">Edad:</label>
+      <input id="POST-name" type="text" name="edad" />
+      <input type="submit" value="Save" />
+    </form>
+  </body>
+</html>
