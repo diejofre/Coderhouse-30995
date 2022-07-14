@@ -1,0 +1,22 @@
+use empresa
+
+db.createCollection("clientes")
+
+db.clientes.insert({nombre: "Adrian", edad: "30"})
+
+db.clientes.insertMany([{nombre: "Jorge", edad: "24"}, {nombre: "Joaco", edad: "29"}])
+
+db.articulos.insertMany([{nombre: "TV", precio: "15000", stock: "10"}, {nombre: "Estufa", precio: "1000", stock: "110"} ])
+
+show collections
+
+db.clientes.find().pretty()
+db.articulos.find().pretty()
+
+db.articulos.estimatedDocumentCount()
+
+db.clientes.countDocuments( {edad: "30"} )
+
+
+
+
