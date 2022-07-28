@@ -44,20 +44,16 @@ const denormalizedBlogpost = denormalize(
   normalizedBlogpost.entities
 );
 
-function print(objeto) {
-  console.log(inspect(objeto, true, 12, true));
-}
+const print = (objeto) => {
+  console.log("TEST", inspect(objeto, true, 12, true));
+};
 
 print(normalizedBlogpost);
 
 console.log(denormalizedBlogpost);
 
 console.log(
-  "Size normalized",
+  "Size normalize:",
   Buffer.byteLength(JSON.stringify(normalizedBlogpost))
 );
-console.log(
-  "Size denormalized",
-  Buffer.byteLength(JSON.stringify(denormalizedBlogpost))
-);
-console.log(Buffer.byteLength(JSON.stringify(blogpost)));
+console.log("Size denormalized:", Buffer.byteLength(JSON.stringify(blogpost)));
